@@ -2,8 +2,8 @@ class Shape {
   constructor(x, y, width, height) {
     var options = {
       restitution: 0.3,
-      friction: 1.5,
-      density: 0.2,
+      friction: 0.01,
+      density: 0.005,
     };
     this.body = Bodies.rectangle(x, y, width, height, options);
 
