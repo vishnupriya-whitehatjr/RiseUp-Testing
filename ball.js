@@ -3,7 +3,7 @@ class Ball {
     var options = {
       restitution: 1,
     };
-    this.body = Bodies.rectangle(x, y, 100, 100, options);
+    this.body = Bodies.rectangle(x, y, 50, 50, options);
     this.image = loadImage("ballon.png");
     this.width = width;
     this.height = height;

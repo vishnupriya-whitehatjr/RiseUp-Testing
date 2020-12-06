@@ -24,7 +24,7 @@ function draw() {
   text(mouseX + "," + mouseY, mouseX, mouseY);
 
   if (frameCount % 20 === 0) {
-    shape.push(new Shape(random(200, 400), 10, 100, 10));
+    shape.push(new Shape(random(200, 400), 10, 8, 8));
   }
   for (var i = 0; i < shape.length; i++) {
     shape[i].display();
