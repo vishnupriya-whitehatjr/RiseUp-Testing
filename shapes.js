@@ -1,9 +1,7 @@
 class Shape {
   constructor(x, y, width, height) {
     var options = {
-      restitution: 0.3,
-      friction: 0.01,
-      density: 0.005,
+      restitution: 0.2,
     };
     this.body = Bodies.rectangle(x, y, width, height, options);
 
@@ -17,9 +15,9 @@ class Shape {
     translate(this.body.position.x, this.body.position.y);
     rotate(angle);
     noStroke();
-    ellipseMode(RADIUS);
+    rectMode(CENTER);
     fill("white");
-    ellipse(0, 0, this.width, this.height);
+    rect(0, 0, this.width, this.height);
     pop();
   }
 }
